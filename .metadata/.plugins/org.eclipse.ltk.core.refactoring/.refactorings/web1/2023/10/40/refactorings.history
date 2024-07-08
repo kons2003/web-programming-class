@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;web1/src/main/webapp/lab/07/lab7-1.html&apos; to &apos;array_max.html&apos;" description="Rename resource &apos;lab7-1.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/lab/07/lab7-1.html" name="array_max.html" stamp="1696494131835" updateReferences="true"/>
+</session>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+	<title>수강과목조사</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<h3> 수강과목조사</h3>
+	<form>
+		이름: <input type="text" name="userName" required><br>
+		학과: <input type="text" name="userDept" required><br>
+		학년: <input type="radio" name="userYear" /> 1학년
+		<input type="radio" name="userYear" /> 2학년
+		<input type="radio" name="userYear" /> 3학년
+		<input type="radio" name="userYear" /> 4학년 이상
+
+		<br>수강과목: 
+		<input type="checkbox" name="userInterest" />IT기술의이해
+		<input type="checkbox" name="userInterest" />웹프로그래밍기초
+		<input type="checkbox" name="userInterest" />UI/UX설계
+		<br><br>
+
+		<button type="submit">확인</button>
+		<button type="reset">취소</button>
+	</form>
+</body>
+</html>

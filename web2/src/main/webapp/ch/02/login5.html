@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>자바스크립트 로그인</title>
+	<script type="text/javascript">
+		function login_check() {
+			// var login = document.loginform;
+			var user_id = loginform.user_id.value;
+			var user_pw = loginform.user_pw.value;
+
+			if ((user_id.length == 0 || user_id == "") || (user_pw.length == 0 || user_pw == "")) {
+				alert("계정과 암호는 필수 항목입니다.");
+			}
+			else {
+				loginform.method = "post";
+				loginform.action = "/web2/login5";
+				loginform.submit();
+			}
+		}
+	</script>
+</head>
+<body>
+	<form name="loginform" method="post" action="/web2/login5" encType="UTF-8">
+		<table>
+			<tr>
+				<td align=right>계정:&nbsp;</td>
+				<td><input type="text" name="user_id"></td>
+			</tr>
+			<tr>
+				<td align=right>암호:&nbsp;</td>
+				<td><input type="password" name="user_pw"></td>
+			</tr>
+			<tr>
+				<td colspan=2>
+					<input type="button" value="로그인" onclick="login_check()">
+					<input type="reset" value="재입력">
+					<input type="hidden" name="user_addr" value="서울시 구로구 항동">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

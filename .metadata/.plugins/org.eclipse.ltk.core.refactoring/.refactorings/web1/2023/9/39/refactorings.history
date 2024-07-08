@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;web1/src/main/webapp/lab/06/js_add.html&apos; to &apos;js_add1.html&apos;" description="Rename resource &apos;js_add.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/lab/06/js_add.html" name="js_add1.html" stamp="1695708643279" updateReferences="true"/>
+</session>

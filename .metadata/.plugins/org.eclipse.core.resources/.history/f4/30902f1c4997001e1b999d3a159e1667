@@ -1,0 +1,26 @@
+package net.skhu.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+
+@Controller
+public class HomeworkController {
+	
+	@GetMapping("homework/test1")
+	public String number(Model model) {
+		model.addAttribute("number", 0);
+		return "homework/test1";
+	}
+	
+	@PostMapping("homework/test1")
+	public String number(Model model, Integer number) {
+		model.addAttribute("number", plus(number));
+		return "homework/test1";
+	}
+	
+	private int plus(int number) {
+		return number++;
+	}
+}

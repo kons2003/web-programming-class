@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>radio</title>
+	<style>
+		div {
+			font-size: 1.2em;
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+	</style>
+</head>
+<body>
+	<form action="/web2/FormRadioServlet">
+		<div>소속 학부</div>
+		<input type="radio" name="dept" value="인문융합자율학부">인문융합자율학부</input>	<br>
+		<input type="radio" name="dept" value="사회융합자율학부">사회융합자율학부</input>	<br>
+		<input type="radio" name="dept" value="미디어콘텐츠융합자율학부">미디어콘텐츠융합자율학부</input><br>
+		<input type="radio" name="dept" value="IT융합자율학부">IT융합자율학부</input><br><br>
+		<input type="submit" value="확인">
+		<input type="reset" value="취소">
+	</form>
+</body>
+</html>
